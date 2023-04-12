@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-#url:                   https://github.com/elan5027
+url:                   https://elan5027.github.io/
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -17,7 +17,7 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 Elan Git Blog
@@ -48,12 +48,23 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
   - title:             About
     url:               /about/
+  - title:             Project
+    url:               /project/
+  - title:             Study
+    url:               /study/
+    submenu:
+      - title:  Library
+        url:      /library/
+      - title:  MLDL
+        url:      /mldl/
+      - title:  CodingTest
+        url:      /codingtest/
+      - title:  Python
+        url:      /python/
+      - title:  Study-etc
+        url:      /study-etc/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -93,7 +104,7 @@ accent_color:          rgb(79,177,186)
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(25,55,71)
+theme_color:           rgb(79,177,186)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
@@ -135,10 +146,10 @@ defaults:
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
-  # - scope:
-  #     type:            posts
-  #   values:
-  #     comments:        true
+  - scope:
+      type:            posts
+    values:
+      comments:        true
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
@@ -220,7 +231,7 @@ hydejack:
 
   # Code blocks and tables "break" the layout by spanning the full available width.
   # Set this to true if you want them to be the same width as other content.
-  no_break_layout:     true
+  no_break_layout:     false
 
   # Set to `true` to disable the dynamic Table of Contents on large screens.
   no_toc:              false
@@ -245,11 +256,11 @@ hydejack:
   no_breadcrumbs:      false
 
   # Set to `true` when building with the `--lsi` option
-  use_lsi:             true
+  use_lsi:             false
 
   # When using Google Analytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
-  cookies_banner:      false
+  cookies_banner:      true
 
   # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
   # Note that this setting has no effect when using the free version.
@@ -308,7 +319,6 @@ collections:
 exclude:
   - .jekyll-cache
   - .sass-cache
-  - '*.toml'
   - vendor
   - Gemfile
   - Gemfile.lock
@@ -333,7 +343,6 @@ plugins:
   - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
-
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
@@ -420,3 +429,16 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+          
+tipue_search:
+  include:
+    pages: true
+    collections: []
+  exclude:
+    files: []
+    categories: []
+    tags: []
+
+
+mermaid:
+  src: '_includes/scripts/mermaid.js'
