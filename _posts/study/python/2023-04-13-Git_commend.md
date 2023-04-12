@@ -1,6 +1,6 @@
 ---
 layout: post
-bigtitle:  "파이썬으로 기본 수학수식 구현하기"
+bigtitle:  "파이썬으로 수학수식 구현"
 subtitle:   "python"
 categories:
     - study
