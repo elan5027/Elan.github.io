@@ -11,7 +11,7 @@ tags:
 comments: true
 published: true
 ---
-#Team 프로젝트 - Django 기초
+# Team 프로젝트 - Django 기초
 
 ## 오늘의 느낌점 한줄정리
 
