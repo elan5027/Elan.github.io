@@ -11,7 +11,6 @@ tags:
 comments: true
 published: true
 ---
-# 팀프로젝트 완성 소감
 
 ## 오늘의 느낌점 한줄정리
 
